@@ -1,0 +1,7 @@
+{
+  "require": {
+    "silex/silex": "1.*",
+    "lightster/lstr-silex-asset": "0.*",
+    "lightster/lstr-silex-template": "0.0.1"
+  }
+}

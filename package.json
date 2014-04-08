@@ -1,0 +1,16 @@
+{
+  "name": "ember_play",
+  "preferGlobal": false,
+  "description": "Assetrinc Skeleton using EmberJs",
+  "keywords": [],
+  "dependencies" : {
+    "coffee-script": "1.7.x",
+    "uglify-js": "2.4.x",
+    "uglifycss": "0.0.8",
+    "ember-precompile": "0.2.4"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
