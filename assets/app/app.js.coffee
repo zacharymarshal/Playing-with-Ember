@@ -3,9 +3,7 @@
 #= require /lib/handlebars-1.1.2.js
 #= require /lib/ember-1.5.0.js
 #= require /lib/ember-data.min.js
-#= require templates/application.hbs
-#= require templates/index.hbs
-#= require templates/about.hbs
+#= require_directory templates/
 #
 App = Ember.Application.create()
 

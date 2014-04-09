@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "63e42543a203d926a7f46221d785f596",
+    "hash": "e68d926cdaeb25ec61e791465c4ba9d7",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -124,23 +124,23 @@
         },
         {
             "name": "lightster/assetrinc",
-            "version": "v0.0.9",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lightster/assetrinc.git",
-                "reference": "69827a69f55370fe8070a031a150ec13957fbd22"
+                "reference": "4505aa110fc1a0f951fb91afd6e86b562053a26f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lightster/assetrinc/zipball/69827a69f55370fe8070a031a150ec13957fbd22",
-                "reference": "69827a69f55370fe8070a031a150ec13957fbd22",
+                "url": "https://api.github.com/repos/lightster/assetrinc/zipball/4505aa110fc1a0f951fb91afd6e86b562053a26f",
+                "reference": "4505aa110fc1a0f951fb91afd6e86b562053a26f",
                 "shasum": ""
             },
             "require": {
                 "kriswallsmith/assetic": "~1.1",
                 "leafo/scssphp": "0.0.9",
                 "php": ">=5.3.3",
-                "zacharyrankin/sprocketeer": "0.0.6"
+                "zacharyrankin/sprocketeer": "~0.1"
             },
             "type": "library",
             "autoload": {
@@ -157,24 +157,24 @@
                 "lightster",
                 "php"
             ],
-            "time": "2014-03-28 04:34:07"
+            "time": "2014-04-08 04:49:05"
         },
         {
             "name": "lightster/lstr-silex-asset",
-            "version": "v0.0.3",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lightster/lstr-silex-asset.git",
-                "reference": "347217d16363b7b614f78102e5da2dc55ae391f5"
+                "reference": "dafa49f731aeb59f385d5165d29d0f7a6ec936ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lightster/lstr-silex-asset/zipball/347217d16363b7b614f78102e5da2dc55ae391f5",
-                "reference": "347217d16363b7b614f78102e5da2dc55ae391f5",
+                "url": "https://api.github.com/repos/lightster/lstr-silex-asset/zipball/dafa49f731aeb59f385d5165d29d0f7a6ec936ae",
+                "reference": "dafa49f731aeb59f385d5165d29d0f7a6ec936ae",
                 "shasum": ""
             },
             "require": {
-                "lightster/assetrinc": "0.0.9",
+                "lightster/assetrinc": "~0.1",
                 "php": ">=5.3",
                 "silex/silex": "~1.1"
             },
@@ -193,7 +193,7 @@
                 "lstr",
                 "silex"
             ],
-            "time": "2014-03-28 04:39:20"
+            "time": "2014-04-08 05:00:15"
         },
         {
             "name": "lightster/lstr-silex-template",
@@ -762,16 +762,16 @@
         },
         {
             "name": "zacharyrankin/sprocketeer",
-            "version": "v0.0.6",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zacharyrankin/sprocketeer.git",
-                "reference": "1843978b1e2a765fe5d0ebbd8e9a8f62a963e198"
+                "reference": "67848c7b5b79cedfd0ded5f3f267df4d196b9ed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zacharyrankin/sprocketeer/zipball/1843978b1e2a765fe5d0ebbd8e9a8f62a963e198",
-                "reference": "1843978b1e2a765fe5d0ebbd8e9a8f62a963e198",
+                "url": "https://api.github.com/repos/zacharyrankin/sprocketeer/zipball/67848c7b5b79cedfd0ded5f3f267df4d196b9ed0",
+                "reference": "67848c7b5b79cedfd0ded5f3f267df4d196b9ed0",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,7 @@
                 "php",
                 "sass"
             ],
-            "time": "2014-03-19 04:42:56"
+            "time": "2014-04-07 03:37:25"
         }
     ],
     "packages-dev": [

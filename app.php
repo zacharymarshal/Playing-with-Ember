@@ -57,7 +57,12 @@ $app->get('/', function (Application $app) {
 });
 
 $app->get('/assets/{name}', function ($name, Application $app) {
-    return $app['lstr.asset.responder']->getResponse($name);
+    $response = $app['lstr.asset.responder']->getResponse($name);
+    $extensions = explode('.', basename($name));
+    if (in_array('hbs', $extensions)) {
+        $response->headers->set('content-type', 'application/javascript');
+    }
+    return $response;
 })->assert('name', '.*');
 
 return $app;
