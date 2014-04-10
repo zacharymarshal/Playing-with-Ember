@@ -6,9 +6,24 @@
 #= require_directory templates/
 #
 App = Ember.Application.create()
+App.PRODUCTS = [
+  {
+    title: 'Hello',
+    image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
+  },
+  {
+    title: 'Hello 2',
+    image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
+  }
+]
 
 App.Router.map ->
   @.route 'about'
+  @.resource 'products'
+
+App.ProductsRoute = Ember.Route.extend
+  model: ->
+    return App.PRODUCTS
 
 App.IndexController = Ember.Controller.extend
   name: 'Zachary'
