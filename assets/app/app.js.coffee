@@ -20,10 +20,16 @@ App.PRODUCTS = [
 App.Router.map ->
   @.route 'about'
   @.resource 'products'
+  @.resource 'product',
+    path: '/products/:title'
 
 App.ProductsRoute = Ember.Route.extend
   model: ->
     return App.PRODUCTS
+
+App.ProductRoute = Ember.Route.extend
+  model: (params) ->
+    App.PRODUCTS.findBy 'title', params.title
 
 App.IndexController = Ember.Controller.extend
   name: 'Zachary'

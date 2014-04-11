@@ -1,5 +1,9 @@
 <h1>Products</h1>
 {{#each}}
-  <h2>{{title}}</h2>
+  <h2>
+    {{#link-to 'product' this}}
+      {{title}}
+    {{/link-to}}
+  </h2>
   <img {{bind-attr src="image"}} width="100">
 {{/each}}
