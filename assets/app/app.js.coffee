@@ -19,9 +19,9 @@ App.PRODUCTS = [
 
 App.Router.map ->
   @.route 'about'
-  @.resource 'products'
-  @.resource 'product',
-    path: '/products/:title'
+  @.resource 'products', ->
+    @.resource 'product',
+      path: '/:title'
 
 App.ProductsRoute = Ember.Route.extend
   model: ->
