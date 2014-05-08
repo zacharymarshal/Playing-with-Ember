@@ -14,6 +14,14 @@ App.PRODUCTS = [
   {
     title: 'Hello 2',
     image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
+  },
+  {
+    title: 'Hello 3',
+    image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
+  },
+  {
+    title: 'Hello 4',
+    image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
   }
 ]
 
