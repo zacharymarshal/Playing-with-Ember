@@ -39,6 +39,9 @@ App.ProductRoute = Ember.Route.extend
   model: (params) ->
     App.PRODUCTS.findBy 'title', params.title
 
+App.ProductsIndexController = Ember.Controller.extend
+  name: 'Zachary'
+
 App.IndexController = Ember.Controller.extend
   name: 'Zachary'
   class: 'hero'
