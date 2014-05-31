@@ -6,20 +6,29 @@
 #= require_directory templates/
 #
 App = Ember.Application.create()
-App.PRODUCTS = [
+App.ApplicationAdapter = DS.FixtureAdapter.extend()
+App.Product = DS.Model.extend
+  title: DS.attr()
+  image: DS.attr()
+
+App.Product.FIXTURES = [
   {
+    id: 1,
     title: 'Hello',
     image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
   },
   {
+    id: 2,
     title: 'Hello 2',
     image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
   },
   {
+    id: 3,
     title: 'Hello 3',
     image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
   },
   {
+    id: 4,
     title: 'Hello 4',
     image: 'https://avatars2.githubusercontent.com/u/321407?s=460'
   }
@@ -29,15 +38,15 @@ App.Router.map ->
   @.route 'about'
   @.resource 'products', ->
     @.resource 'product',
-      path: '/:title'
+      path: '/:product_id'
 
 App.ProductsRoute = Ember.Route.extend
   model: ->
-    return App.PRODUCTS
+    @store.findAll 'product'
 
 App.ProductRoute = Ember.Route.extend
   model: (params) ->
-    App.PRODUCTS.findBy 'title', params.title
+    @store.find 'product', params.product_id
 
 App.ProductsIndexController = Ember.Controller.extend
   name: 'Zachary'
